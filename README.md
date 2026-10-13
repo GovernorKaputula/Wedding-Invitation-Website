@@ -1,136 +1,50 @@
-# 💍 Chama Wedding Invitation Website
+# Mwila & Chama
 
----
+A wedding invitation and keepsake for **29 November 2025, Lusaka**. An ivory and burgundy layout pairs the couple’s original photographs with the ceremony schedule, venue directions and family contacts.
 
-## Project Overview
+[View the website](https://governorkaputula.github.io/Wedding-Invitation-Website/)
 
-This project is a modern digital wedding invitation website built to replace traditional paper invitations.
+## Run locally
 
-It provides guests with a beautiful, interactive experience where they can view wedding details, explore the couple’s story, check the event timeline, and RSVP online.
+```sh
+python -m http.server 4175 --bind 127.0.0.1
+```
 
-The website is fully responsive and designed for both mobile and desktop users.
+Open `http://127.0.0.1:4175`. No build step or application dependencies are required. JavaScript modules require an HTTP server; opening the HTML directly from the filesystem is not supported.
 
----
+## Behaviour
 
-## Tools & Technologies
+- Responsive layout, visible keyboard focus and reduced-motion support.
+- Six-photo gallery with previous/next controls, arrow keys, Escape to close, and focus restored to the selected thumbnail. Without JavaScript, the image links still work.
+- All date calculations use Zambia’s UTC+2 offset. The page distinguishes the countdown, wedding day, and keepsake states.
+- RSVPs close at the end of 15 November 2025, Zambia time. The current page intentionally shows a closed message and family contacts.
+- The original Google Apps Script endpoint is retained in `script.js`. When open, the form prevents duplicate pending requests, times out after 15 seconds and preserves entered details if confirmation fails. Declined invitations record zero attending guests. Only an explicit JSON success response is treated as confirmed.
 
-- HTML5  
-- CSS3  
-- JavaScript (Vanilla JS)  
-- Google Fonts  
-- Font Awesome Icons  
-- Google Apps Script (RSVP backend)  
-- GitHub Pages (Hosting)  
+The RSVP backend is external to this repository. No live guest submissions were sent during testing. Server-side deadline enforcement, validation and the endpoint’s response contract must be verified with its owner before reusing the form for another event; a client-side deadline is not access control.
 
----
+## Files
 
-## Features
+| File         | Purpose                                          |
+| ------------ | ------------------------------------------------ |
+| `index.html` | Content, navigation, photo links and RSVP markup |
+| `style.css`  | Responsive invitation layout and lightbox styles |
+| `script.js`  | Gallery, event state and RSVP handling           |
+| `event.js`   | Zambia event timestamps and date/gallery helpers |
+| `images/`    | Original couple photographs                      |
+| `tests/`     | Deadline, countdown, gallery and document checks |
 
-- Responsive wedding invitation design  
-- Hero section with couple names and date  
-- Smooth scroll animations  
-- Live countdown timer  
-- Wedding event timeline  
-- Interactive photo gallery  
-- RSVP form with backend submission  
-- Google Maps integration for venue directions  
+For a different event, update the visible date, schedule and deadline in `index.html` together with the timestamps in `event.js`. Keep the original event information when maintaining this keepsake.
 
----
+## Verification
 
-## Content Information
+```sh
+npm test
+python tests/check_site.py
+node --check script.js
+```
 
-This project is a static web application and does not use a dataset.
+Node 22+ and Python 3 are sufficient. GitHub Actions runs these checks on pushes and pull requests. The browser review covers desktop, narrow screens, gallery wraparound, keyboard controls, focus restoration and the closed RSVP state.
 
-It is structured around event information including:
+Deploy the repository root from `main` using GitHub Pages. Paths are relative so the project works beneath the repository URL.
 
-- Couple details  
-- Wedding date  
-- Ceremony schedule  
-- Reception details  
-- Venue locations  
-- Guest RSVP responses  
-
----
-
-## Implementation Details
-
-### UI Design
-The website uses a clean, elegant layout with smooth scroll animations to enhance user experience.
-
----
-
-### Countdown Timer
-A JavaScript-based real-time countdown calculates the remaining time until the wedding date.
-
----
-
-### RSVP System
-The RSVP form collects guest responses and sends them to a Google Sheets database using a Google Apps Script endpoint.
-
----
-
-### Gallery Section
-A responsive image grid displays wedding photos with smooth interaction effects.
-
----
-
-### Navigation
-A sticky navigation bar allows users to easily move between sections.
-
----
-
-## Key Insights (Design & Development)
-
-- Interactive websites improve engagement  
-- Countdown timers create anticipation  
-- RSVP automation reduces manual tracking  
-- Clean UI improves mobile experience  
-- Lightweight JavaScript is powerful without frameworks  
-
----
-
-## Key Skills Demonstrated
-
-- HTML, CSS, JavaScript  
-- Responsive design  
-- DOM manipulation  
-- API integration  
-- Git & GitHub  
-- Deployment via GitHub Pages  
-
----
-
-## Project Outcome
-
-This project demonstrates how a traditional wedding invitation can be transformed into a modern digital experience.
-
-It successfully:
-
-- Improves guest accessibility  
-- Automates RSVP collection  
-- Provides real-time countdown updates  
-- Enhances user experience with interactive UI  
-
----
-
-## Files in This Repository
-
-- index.html  
-- style.css  
-- script.js  
-- images/  
-- README.md  
-
----
-
-## Live Demo
-
-👉 https://governorkaputula.github.io/chamawedding/
-
----
-
-## Author
-
-Kenneth Gondwe Kaputula  
-Electrical and Electronics Engineer  
-YellowPhase Electrical & Mechanical Engineers  
+Designed by [Kenneth Gondwe Kaputula / Yellowphase](https://www.yellowphase.org). Photographs and event content remain with their respective owners.

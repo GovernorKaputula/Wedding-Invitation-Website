@@ -1,299 +1,451 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mwila & Chama’s Wedding | 29.11.2025</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f3ec" />
+    <meta
+      name="description"
+      content="Mwila & Chama — 29 November 2025, Lusaka. A celebration of love, family and a lifetime together."
+    />
+    <title>Mwila & Chama · 29 November 2025</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-
-    <nav class="site-navigation sticky-nav">
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#story">Our Story</a></li>
-            <li><a href="#timeline">Timeline</a></li>
-            <li><a href="#rsvp">RSVP</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <header class="hero" id="hero" style="background-image: url('images/wed4.jpg');"> 
-            <div class="hero-content" data-scroll>
-                <p class="pre-heading">The wedding of</p>
-                <h1 class="couple-names">Mwila & Chama</h1>
-                <p class="date">29th November 2025</p>
-            </div>
-        </header>
-        
-        <section id="story" class="content-section" data-scroll>
-            <div class="invitation-message" data-scroll="fade-up">
-                 <h2>We invite you to celebrate our union!</h2>
-                 <p class="readable-text">
-                    With hearts full of love and gratitude, the Mbulakulima and Musonda families , request the pleasure of your company as their Children Mwila and Chama exchange vows and begin their journey as husband and wife. Your presence will be our greatest gift.
-                     <strong>Please join us in Lusaka, Zambia.</strong>
-                 </p>
-            </div>
-
-            <div class="couple-intro-container">
-                <div class="couple-card" data-scroll="fade-right">
-                    <img src="images/mwila.jpg" alt="Chama Musonda, The Bride" class="profile-photo" />
-                    <h3>Mwila Mbulakulima</h3>
-                    <p>The Groom</p>
-                </div>
-                <div class="couple-card" data-scroll="fade-left">
-                    <img src="images/chama.jpg" alt="Mwila Mbulakulima, The Groom" class="profile-photo" />
-                    <h3>Chama Musonda</h3>
-                    <p>The Bride</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="countdown-section" class="countdown-section" data-scroll>
-            <h2>Until We Say "I Do"</h2>
-            <div class="countdown-timer" id="countdown">
-                <div class="time-unit"><span id="days">00</span><small>Days</small></div>
-                <div class="time-unit"><span id="hours">00</span><small>Hours</small></div>
-                <div class="time-unit"><span id="minutes">00</span><small>Minutes</small></div>
-                <div class="time-unit"><span id="seconds">00</span><small>Seconds</small></div>
-            </div>
-        </section>
-
-        <section id="timeline" class="content-section" data-scroll>
-            <h2>The Wedding Timeline</h2>
-            <div class="event-details">
-                
-                <div class="event ceremony" data-scroll="fade-up">
-                    <h4><span class="event-icon"><i class="fa-solid fa-church"></i></span> The Ceremony</h4>
-                    <p class="time-details">
-                         <strong>09:30 hrs:</strong> Guests arrive and are seated.<br>
-                         <strong>10:00 hrs:</strong> Procession begins.<br>
-                         <strong>11:30 hrs:</strong> Ceremony concludes.
-                    </p>
-                    <address>St. Ignatius Catholic Church, Lusaka</address>
-                    <a href="https://maps.google.com/?cid=1222717358917862993" target="_blank" class="map-link">View Directions</a>
-                </div>
-                    <hr class="event-divider">
-
-                <div class="event photos-break" data-scroll="fade-up">
-                    <h4><span class="event-icon"><i class="fa-solid fa-camera"></i></span> The Photoshoot</h4> 
-                    <p class="time-details">
-                         <strong>11:30 hrs - 16:00 hrs:</strong> This period is reserved for the bridal party's photoshoot and travel to the reception venue.
-                    </p>
-               </div>
-
-                <hr class="event-divider">
-
-                <div class="event reception" data-scroll="fade-up">
-                    <h4><span class="event-icon"><i class="fa-solid fa-champagne-glasses"></i></span> The Reception</h4>
-                    <p class="time-details">
-                         <strong>17:30 hrs:</strong> Dinner Service begins.<br>
-                         <strong>19:00 hrs:</strong> Cake Cutting & First Dance.<br>
-                         <strong>19:30 hrs:</strong> Dance Floor Opens!
-                    </p>
-                    <address>Radisson Blu Hotel, Lusaka, Theme: "Shade Of Black "</address>
-                    <a href="https://maps.google.com/?cid=72219736927252305" target="_blank" class="map-link">View Directions</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="rsvp" class="form-section content-section" data-scroll>
-            <h2>RSVP: Will You Join Our Celebration?</h2>
-            <p class="readable-text">
-                We can't wait to share our special day with you! Kindly confirm your attendance by <strong>15th November 2025</strong>.
-            </p>
-
-            <form id="rsvp-form" class="rsvp-form">
-                <div class="form-group">
-                    <label for="name">Your Full Name(s)</label>
-                    <input type="text" id="name" name="name" required placeholder="e.g., Bright Mulenga" />
-                </div>
-                
-                <div class="form-group attendance-group">
-                    <label for="attending">Will you be attending?</label>
-                    <select id="attending" name="attending" required>
-                        <option value="">-- Please Select --</option>
-                        <option value="Yes">Joyfully Attending 🎉</option>
-                        <option value="No">Regretfully Declining 😔</option>
-                    </select>
-                </div>
-
-             <div class="form-group guest-count-group">
-  <label for="guests">Total Number in your party (including yourself)</label>
-  <input 
-    type="number" id="guests"  name="guests"  value="1"  readonly  required 
-  />
-</div>
-
-                
-                <div class="form-group">
-                    <label for="dietary">Dietary Needs or Allergies (Optional)</label>
-                    <textarea id="dietary" name="dietary" rows="3" placeholder="e.g., Vegetarian, Gluten-Free, Nut allergy..."></textarea>
-                </div>
-                <p class="readable-text">"Gifts In monetary Form Shall Be Highly Aprreciated!"</p>
-               <strong><p class="readable-text">Please Note:</p></strong>
-                <p class="readable-text">1. This Card is not Transferrable</p>
-                <p class="readable-text">2. No Kids Allowed</p>
-                <p class="readable-text">3. This is a "one person" card (No Mr And Mrs)</p>
-                <p class="readable-text">4. we will not consider any RSVP after <strong>November 15th 2025</strong> </p>
-                <button id="rsvp-submit-button" type="submit" class="cta-button pulse">Submit RSVP</button>
-            </form>
-
-            <div id="rsvp-message" class="hidden-message"></div>
-        </section>
-
-        <section id="gallery" class="content-section" data-scroll>
-            <h2>Gallery</h2>
-            <p class="readable-text">A few moments from our journey together.</p>
-            
-            <div class="photo-grid-5">
-                
-                <div class="main-photo" data-scroll="fade-up">
-                    <img src="images/wed2.jpg" alt="Couple photo 1" role="button">
-                </div>
-
-                <div class="sub-photos">
-                
-                    <img src="images/wed3.jpg" alt="Couple photo 3" data-scroll="fade-up" data-scroll-delay="200" role="button">
-                    <img src="images/wed1.jpg" alt="Couple photo 4" data-scroll="fade-up" data-scroll-delay="300" role="button">
-                   
-                </div>
-
-            </div>
-            
-            <div class="contact-details" data-scroll="fade-up">
-                 <h3>For Event Details, Kindly Contact:</h3>
-                 <p><strong>Chaile Phiri</strong> (From Him): <a href="tel:+26097732180">+260 977 326 180</a></p>
-                 <p><strong>Bertha Pandwe.</strong> (From Her): <a href="tel:+260979133402">+260 979 133 402</a></p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>
-            © Mwila & Chama 2025 | #MwilaAndChamaSayIDo
-            <br>
-            Designed by <a href="https://www.yellowphase.org" target="_blank" rel="noopener noreferrer">Yellowphase</a>
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="monogram" href="#hero" aria-label="Mwila and Chama, home"
+        >M<span>&</span>C</a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#story">Our celebration</a><a href="#timeline">The day</a
+        ><a href="#gallery">Photographs</a
+        ><a class="nav-rsvp" href="#rsvp"
+          >RSVP <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+    <main id="main">
+      <section
+        class="hero section-shell"
+        id="hero"
+        aria-labelledby="hero-title"
+      >
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="fine-line" aria-hidden="true"></span>Together, with
+            love
+          </p>
+          <h1 id="hero-title">Mwila <em>&</em><br />Chama</h1>
+          <p class="hero-description">
+            Two hearts. Two families.<br />One beautiful beginning.
+          </p>
+          <div class="hero-date">
+            <span>29</span>
+            <div>November<br /><span>2025 · Lusaka, Zambia</span></div>
+          </div>
+          <a class="text-link" href="#story"
+            >Discover our celebration <span aria-hidden="true">↓</span></a
+          >
+        </div>
+        <figure class="hero-portrait">
+          <div class="portrait-frame">
+            <img
+              src="images/wed4.jpg"
+              alt="Mwila and Chama together beneath a tree"
+              width="720"
+              height="1080"
+              fetchpriority="high"
+            />
+          </div>
+          <span class="portrait-seal" aria-hidden="true"
+            >M + C<small>29 · 11 · 25</small></span
+          >
+          <figcaption>A lifetime begins with you.</figcaption>
+        </figure>
+        <p class="hero-footnote">The Mbulakulima & Musonda families</p>
+      </section>
+      <section
+        class="invitation section-shell"
+        id="story"
+        aria-labelledby="story-title"
+      >
+        <p class="eyebrow">With our families</p>
+        <h2 id="story-title">A love worth <em>celebrating.</em></h2>
+        <p class="invitation-text">
+          With hearts full of love and gratitude, the Mbulakulima and Musonda
+          families celebrate the union of their children, Mwila and Chama, as
+          they begin their journey as husband and wife.
         </p>
+        <p class="invitation-note">Your presence is our greatest gift.</p>
+        <div class="couple-intro">
+          <figure>
+            <img
+              src="images/mwila.jpg"
+              alt="Mwila Mbulakulima"
+              width="720"
+              height="1080"
+              loading="lazy"
+            />
+            <figcaption>
+              <span class="eyebrow">The groom</span>
+              <h3>Mwila Mbulakulima</h3>
+            </figcaption>
+          </figure>
+          <span class="couple-amp" aria-hidden="true">&</span>
+          <figure>
+            <img
+              src="images/chama.jpg"
+              alt="Chama Musonda"
+              width="720"
+              height="1080"
+              loading="lazy"
+            />
+            <figcaption>
+              <span class="eyebrow">The bride</span>
+              <h3>Chama Musonda</h3>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="date-band" aria-labelledby="date-heading">
+        <div>
+          <p class="eyebrow">Our wedding day</p>
+          <h2 id="date-heading">A day to <em>remember.</em></h2>
+          <p>29 November 2025 · Lusaka, Zambia</p>
+        </div>
+        <div class="date-ornament" aria-hidden="true">
+          29<span>11 · 2025</span>
+        </div>
+        <div
+          id="countdown"
+          class="countdown"
+          hidden
+          aria-label="Time until the wedding"
+        >
+          <div><strong id="days">00</strong><span>Days</span></div>
+          <div><strong id="hours">00</strong><span>Hours</span></div>
+          <div><strong id="minutes">00</strong><span>Minutes</span></div>
+          <div><strong id="seconds">00</strong><span>Seconds</span></div>
+        </div>
+      </section>
+      <section
+        class="section-shell day-section"
+        id="timeline"
+        aria-labelledby="day-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The order of the day</p>
+            <h2 id="day-title">Every little <em>moment.</em></h2>
+          </div>
+          <p>
+            Saturday, 29 November 2025<br />All times in Central Africa Time
+            (UTC+2).
+          </p>
+        </div>
+        <ol class="timeline">
+          <li>
+            <div class="event-number">01</div>
+            <div class="event-main">
+              <span class="eyebrow">09:30 — 11:30</span>
+              <h3>The ceremony</h3>
+              <p>St. Ignatius Catholic Church, Lusaka</p>
+              <a
+                class="text-link"
+                href="https://maps.google.com/?cid=1222717358917862993"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Directions to St. Ignatius Catholic Church (opens in a new tab)"
+                >View directions <span aria-hidden="true">↗</span></a
+              >
+            </div>
+            <ul class="event-schedule">
+              <li><time>09:30</time> Guests arrive & are seated</li>
+              <li><time>10:00</time> Procession begins</li>
+              <li><time>11:30</time> Ceremony concludes</li>
+            </ul>
+          </li>
+          <li>
+            <div class="event-number">02</div>
+            <div class="event-main">
+              <span class="eyebrow">11:30 — 16:00</span>
+              <h3>A moment to pause</h3>
+              <p>The bridal party’s photographs</p>
+            </div>
+            <p class="event-note">
+              Time for the bridal party’s photoshoot and travel to the reception
+              venue.
+            </p>
+          </li>
+          <li>
+            <div class="event-number">03</div>
+            <div class="event-main">
+              <span class="eyebrow">From 17:30</span>
+              <h3>Dinner & dancing</h3>
+              <p>Radisson Blu Hotel, Lusaka</p>
+              <a
+                class="text-link"
+                href="https://maps.google.com/?cid=72219736927252305"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Directions to Radisson Blu Hotel (opens in a new tab)"
+                >View directions <span aria-hidden="true">↗</span></a
+              >
+            </div>
+            <ul class="event-schedule">
+              <li><time>17:30</time> Dinner service</li>
+              <li><time>19:00</time> Cake cutting & first dance</li>
+              <li><time>19:30</time> The dance floor opens</li>
+            </ul>
+          </li>
+        </ol>
+        <div class="dress-note">
+          <span class="dress-swatch" aria-hidden="true"></span>
+          <div>
+            <span class="eyebrow">The reception theme</span>
+            <p>Shade of Black</p>
+          </div>
+          <span class="dress-description"
+            >An evening of timeless elegance.</span
+          >
+        </div>
+      </section>
+      <section
+        class="gallery-section"
+        id="gallery"
+        aria-labelledby="gallery-title"
+      >
+        <div class="section-shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Us, through the lens</p>
+              <h2 id="gallery-title">Better <em>together.</em></h2>
+            </div>
+            <p>
+              A few moments from our journey.<br />Select a photograph to take a
+              closer look.
+            </p>
+          </div>
+          <div class="photo-grid">
+            <a
+              class="gallery-photo large"
+              href="images/wed2.jpg"
+              data-gallery
+              aria-label="Open photograph 1 of 6"
+              ><img
+                src="images/wed2.jpg"
+                alt="Mwila and Chama, a moment together"
+                loading="lazy"
+                width="720"
+                height="1080"
+              /><span aria-hidden="true">View photograph ↗</span></a
+            >
+            <a
+              class="gallery-photo"
+              href="images/wed3.jpg"
+              data-gallery
+              aria-label="Open photograph 2 of 6"
+              ><img
+                src="images/wed3.jpg"
+                alt="A portrait from Mwila and Chama’s photo collection"
+                loading="lazy"
+                width="720"
+                height="1080"
+              /><span aria-hidden="true">View photograph ↗</span></a
+            >
+            <a
+              class="gallery-photo"
+              href="images/wed1.jpg"
+              data-gallery
+              aria-label="Open photograph 3 of 6"
+              ><img
+                src="images/wed1.jpg"
+                alt="Mwila and Chama’s shared memories"
+                loading="lazy"
+                width="720"
+                height="1080"
+              /><span aria-hidden="true">View photograph ↗</span></a
+            >
+            <a
+              class="gallery-photo"
+              href="images/wed5.jpg"
+              data-gallery
+              aria-label="Open photograph 4 of 6"
+              ><img
+                src="images/wed5.jpg"
+                alt="Another moment from their journey together"
+                loading="lazy"
+                width="720"
+                height="1080"
+              /><span aria-hidden="true">View photograph ↗</span></a
+            >
+            <a
+              class="gallery-photo"
+              href="images/wed6.jpg"
+              data-gallery
+              aria-label="Open photograph 5 of 6"
+              ><img
+                src="images/wed6.jpg"
+                alt="Mwila and Chama, captured together"
+                loading="lazy"
+                width="720"
+                height="1080"
+              /><span aria-hidden="true">View photograph ↗</span></a
+            >
+            <a
+              class="gallery-photo wide"
+              href="images/wed4.jpg"
+              data-gallery
+              aria-label="Open photograph 6 of 6"
+              ><img
+                src="images/wed4.jpg"
+                alt="Mwila and Chama beside a tree"
+                loading="lazy"
+                width="720"
+                height="1080"
+              /><span aria-hidden="true">View photograph ↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        class="section-shell rsvp-section"
+        id="rsvp"
+        aria-labelledby="rsvp-title"
+      >
+        <div>
+          <p class="eyebrow">With love & gratitude</p>
+          <h2 id="rsvp-title">You’re part<br />of <em>our story.</em></h2>
+          <p>Thank you for sharing in our celebration.</p>
+          <p class="rsvp-deadline">RSVP deadline · 15 November 2025</p>
+        </div>
+        <div class="rsvp-panel">
+          <div id="rsvp-closed">
+            <span class="eyebrow">RSVPs are closed</span>
+            <h3>Thank you for celebrating with us.</h3>
+            <p>
+              The response deadline for our 29 November 2025 wedding has passed.
+              For any questions, please contact our family representatives
+              below.
+            </p>
+          </div>
+          <form id="rsvp-form" hidden>
+            <label for="name">Your full name</label
+            ><input
+              id="name"
+              name="name"
+              autocomplete="name"
+              maxlength="120"
+              required
+            /><label for="attending">Will you be joining us?</label
+            ><select id="attending" name="attending" required>
+              <option value="">Select your response</option>
+              <option value="Yes">Joyfully attending</option>
+              <option value="No">Regretfully declining</option></select
+            ><label for="dietary"
+              >Dietary requirements <span>(optional)</span></label
+            ><textarea
+              id="dietary"
+              name="dietary"
+              maxlength="500"
+              rows="3"
+            ></textarea>
+            <p class="form-note">
+              This invitation is for one named adult guest. Your response is
+              sent to the wedding organisers.
+            </p>
+            <button class="button" id="rsvp-submit-button" type="submit">
+              Send my RSVP <span aria-hidden="true">↗</span>
+            </button>
+          </form>
+          <p id="rsvp-message" role="status" aria-live="polite"></p>
+          <div class="guest-notes">
+            <details>
+              <summary>Invitation details</summary>
+              <p>
+                This invitation is non-transferable and admits one person. This
+                is an adults-only celebration; additional guests are not
+                included.
+              </p>
+            </details>
+            <details>
+              <summary>A note on gifts</summary>
+              <p>
+                Your presence is our greatest gift. Monetary gifts are warmly
+                appreciated.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section
+        class="contact-section section-shell"
+        aria-labelledby="contact-title"
+      >
+        <div>
+          <p class="eyebrow">A helping hand</p>
+          <h2 id="contact-title">Have a question?</h2>
+        </div>
+        <div>
+          <p class="eyebrow">Groom’s representative</p>
+          <h3>Chaile Phiri</h3>
+          <a href="tel:+260977326180">+260 977 326 180</a>
+        </div>
+        <div>
+          <p class="eyebrow">Bride’s representative</p>
+          <h3>Bertha Pandwe</h3>
+          <a href="tel:+260979133402">+260 979 133 402</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a class="footer-monogram" href="#hero" aria-label="Back to top"
+        >M <em>&</em> C</a
+      >
+      <p>
+        29 · 11 · 2025 <span aria-hidden="true">/</span> #MwilaAndChamaSayIDo
+      </p>
+      <small
+        >© Mwila & Chama 2025 · Designed by
+        <a
+          href="https://www.yellowphase.org"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Yellowphase</a
+        ></small
+      >
     </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // === 1. SCROLL REVEAL ===
-            const scrollElements = document.querySelectorAll("[data-scroll]");
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        // Apply scrolling effect and stop observing
-                        entry.target.classList.add("scrolled");
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { 
-                root: null,
-                threshold: 0.15,
-                rootMargin: "0px 0px -50px 0px" // Improved rootMargin for better reveal timing
-            });
-            scrollElements.forEach(el => observer.observe(el));
-
-            // === 2. COUNTDOWN TIMER ===
-            const countdownContainer = document.getElementById("countdown-section");
-            // Set the target date and time (Nov 29, 2025, 10:00 AM, Zambia Time)
-            const countdownDate = new Date("Nov 29, 2025 10:00:00 GMT+02:00").getTime();
-            
-            const timer = setInterval(() => {
-                const now = new Date().getTime();
-                const distance = countdownDate - now;
-                
-                // Time calculations
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                // Safely update DOM elements with zero padding
-                const daysEl = document.getElementById("days");
-                const hoursEl = document.getElementById("hours");
-                const minutesEl = document.getElementById("minutes");
-                const secondsEl = document.getElementById("seconds");
-
-                if (daysEl) daysEl.textContent = days.toString().padStart(2, '0');
-                if (hoursEl) hoursEl.textContent = hours.toString().padStart(2, '0');
-                if (minutesEl) minutesEl.textContent = minutes.toString().padStart(2, '0');
-                if (secondsEl) secondsEl.textContent = seconds.toString().padStart(2, '0');
-
-                if (distance < 0) {
-                    clearInterval(timer);
-                    if (countdownContainer) {
-                        countdownContainer.innerHTML = "<h2>The celebration is underway!</h2>";
-                    }
-                }
-            }, 1000);
-
-            // === 3. GOOGLE SHEETS RSVP SUBMISSION ===
-            const form = document.getElementById('rsvp-form');
-            const messageDiv = document.getElementById('rsvp-message');
-            // NOTE: Replace this with your actual deployed Google Apps Script URL
-            const scriptURL = "https://script.google.com/macros/s/AKfycbzy3Nz7vwggV2nTqxhxxm5ZNdR7BS_ILbaSyE0WSQhf2ORsF6nA4crHJ_UXtAmQDcja/exec";
-
-            form.addEventListener('submit', async (e) => {
-                e.preventDefault();
-                
-                // CORRECTED: Get the value of the <select> element
-                const attendingSelect = document.getElementById('attending');
-                const attendingStatusValue = attendingSelect ? attendingSelect.value : "";
-                
-                // Validation check for the dropdown
-                if (attendingStatusValue === "") {
-                    messageDiv.textContent = "⚠️ Please select whether you will attend.";
-                    messageDiv.style.display = 'block';
-                    return;
-                }
-                
-                // Form data payload
-                const data = {
-                    name: document.getElementById('name').value,
-                    attending: attendingStatusValue, // Corrected value
-                    guests: document.getElementById('guests').value,
-                    dietary: document.getElementById('dietary').value || 'None'
-                };
-
-                // Show loading message and disable button
-                messageDiv.textContent = "Sending RSVP...";
-                messageDiv.style.display = 'block';
-                document.getElementById('rsvp-submit-button').disabled = true;
-
-                try {
-                    const res = await fetch(scriptURL, {
-                        method: "POST",
-                        redirect: "follow",
-                        // Using text/plain for compatibility with some Google Scripts
-                        headers: { "Content-Type": "text/plain;charset=utf-8" }, 
-                        body: JSON.stringify(data)
-                    });
-
-                    if (res.ok) {
-                        messageDiv.textContent = "✅ Your RSVP has been submitted successfully! Thank you!";
-                        form.reset();
-                    } else {
-                        console.error("Server responded with error status:", res.status);
-                        messageDiv.textContent = "⚠️ There was an issue submitting your RSVP. Please check the RSVP link or try again.";
-                    }
-                } catch (err) {
-                    console.error("Fetch Error:", err);
-                    messageDiv.textContent = "❌ Network error. Please check your connection and try again.";
-                } finally {
-                    document.getElementById('rsvp-submit-button').disabled = false;
-                }
-            });
-        });
-    </script>
-</body>
+    <dialog id="photo-dialog" aria-label="Wedding photo viewer">
+      <div class="lightbox-top">
+        <p id="photo-count" aria-live="polite"></p>
+        <button id="close-photo" type="button" aria-label="Close photo viewer">
+          Close <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <figure>
+        <img id="lightbox-image" alt="" />
+        <figcaption id="photo-caption"></figcaption>
+      </figure>
+      <div class="lightbox-controls">
+        <button
+          id="previous-photo"
+          type="button"
+          aria-label="Previous photograph"
+        >
+          ← Previous</button
+        ><button id="next-photo" type="button" aria-label="Next photograph">
+          Next →
+        </button>
+      </div>
+    </dialog>
+  </body>
 </html>
